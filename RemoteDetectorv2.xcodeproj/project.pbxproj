@@ -13,8 +13,13 @@
 		41E4568328BFC3F900B9ADA5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41E4568228BFC3F900B9ADA5 /* Preview Assets.xcassets */; };
 		41E4568F28BFC74500B9ADA5 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4568E28BFC74500B9ADA5 /* Classifier.swift */; };
 		41E4569128BFC77D00B9ADA5 /* RemoteDetector 1.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569028BFC77D00B9ADA5 /* RemoteDetector 1.mlmodel */; };
-		41E4569328BFC7A900B9ADA5 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569228BFC7A900B9ADA5 /* ImageClassifier.swift */; };
+		41E4569328BFC7A900B9ADA5 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569228BFC7A900B9ADA5 /* ContentViewModel.swift */; };
 		41E4569628BFC7D600B9ADA5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569528BFC7D600B9ADA5 /* ImagePicker.swift */; };
+		41E4569A28BFDAB600B9ADA5 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569928BFDAB600B9ADA5 /* OnboardingView.swift */; };
+		41E4569C28BFDBC000B9ADA5 /* ImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569B28BFDBC000B9ADA5 /* ImageView.swift */; };
+		41E4569E28BFE64F00B9ADA5 /* AppleRemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569D28BFE64F00B9ADA5 /* AppleRemoteView.swift */; };
+		41E456A028BFE65800B9ADA5 /* PlaystationRemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E4569F28BFE65800B9ADA5 /* PlaystationRemoteView.swift */; };
+		41E456A228BFE66600B9ADA5 /* ComcastRemoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E456A128BFE66600B9ADA5 /* ComcastRemoteView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +30,13 @@
 		41E4568228BFC3F900B9ADA5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		41E4568E28BFC74500B9ADA5 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
 		41E4569028BFC77D00B9ADA5 /* RemoteDetector 1.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = "RemoteDetector 1.mlmodel"; sourceTree = "<group>"; };
-		41E4569228BFC7A900B9ADA5 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		41E4569228BFC7A900B9ADA5 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		41E4569528BFC7D600B9ADA5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		41E4569928BFDAB600B9ADA5 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		41E4569B28BFDBC000B9ADA5 /* ImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageView.swift; sourceTree = "<group>"; };
+		41E4569D28BFE64F00B9ADA5 /* AppleRemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleRemoteView.swift; sourceTree = "<group>"; };
+		41E4569F28BFE65800B9ADA5 /* PlaystationRemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaystationRemoteView.swift; sourceTree = "<group>"; };
+		41E456A128BFE66600B9ADA5 /* ComcastRemoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComcastRemoteView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +69,11 @@
 		41E4567A28BFC3F700B9ADA5 /* RemoteDetectorv2 */ = {
 			isa = PBXGroup;
 			children = (
+				41E4569828BFC9B200B9ADA5 /* View Models */,
+				41E4569728BFC9AB00B9ADA5 /* Views */,
 				41E4569428BFC7C400B9ADA5 /* Image Picker */,
 				41E4568D28BFC72900B9ADA5 /* Classifiers */,
 				41E4567B28BFC3F700B9ADA5 /* RemoteDetectorv2App.swift */,
-				41E4567D28BFC3F700B9ADA5 /* ContentView.swift */,
 				41E4567F28BFC3F900B9ADA5 /* Assets.xcassets */,
 				41E4568128BFC3F900B9ADA5 /* Preview Content */,
 			);
@@ -82,7 +93,6 @@
 			children = (
 				41E4569028BFC77D00B9ADA5 /* RemoteDetector 1.mlmodel */,
 				41E4568E28BFC74500B9ADA5 /* Classifier.swift */,
-				41E4569228BFC7A900B9ADA5 /* ImageClassifier.swift */,
 			);
 			path = Classifiers;
 			sourceTree = "<group>";
@@ -93,6 +103,27 @@
 				41E4569528BFC7D600B9ADA5 /* ImagePicker.swift */,
 			);
 			path = "Image Picker";
+			sourceTree = "<group>";
+		};
+		41E4569728BFC9AB00B9ADA5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41E4567D28BFC3F700B9ADA5 /* ContentView.swift */,
+				41E4569928BFDAB600B9ADA5 /* OnboardingView.swift */,
+				41E4569B28BFDBC000B9ADA5 /* ImageView.swift */,
+				41E4569D28BFE64F00B9ADA5 /* AppleRemoteView.swift */,
+				41E4569F28BFE65800B9ADA5 /* PlaystationRemoteView.swift */,
+				41E456A128BFE66600B9ADA5 /* ComcastRemoteView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		41E4569828BFC9B200B9ADA5 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				41E4569228BFC7A900B9ADA5 /* ContentViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +196,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41E4569C28BFDBC000B9ADA5 /* ImageView.swift in Sources */,
+				41E456A228BFE66600B9ADA5 /* ComcastRemoteView.swift in Sources */,
 				41E4568F28BFC74500B9ADA5 /* Classifier.swift in Sources */,
 				41E4567E28BFC3F700B9ADA5 /* ContentView.swift in Sources */,
-				41E4569328BFC7A900B9ADA5 /* ImageClassifier.swift in Sources */,
+				41E456A028BFE65800B9ADA5 /* PlaystationRemoteView.swift in Sources */,
+				41E4569328BFC7A900B9ADA5 /* ContentViewModel.swift in Sources */,
 				41E4569628BFC7D600B9ADA5 /* ImagePicker.swift in Sources */,
 				41E4567C28BFC3F700B9ADA5 /* RemoteDetectorv2App.swift in Sources */,
+				41E4569E28BFE64F00B9ADA5 /* AppleRemoteView.swift in Sources */,
 				41E4569128BFC77D00B9ADA5 /* RemoteDetector 1.mlmodel in Sources */,
+				41E4569A28BFDAB600B9ADA5 /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
